@@ -49,47 +49,34 @@ ____
 |  `venv/`                                | Virtual environment folder (optional, for isolated dependencies) |
 
 ### How It Works 
-‎ 
-‎ 
-	1.	Loads warehouse data (e.g., stock, reorder level, and storage cost).
-	2.	Computes surplus and deficit across warehouses.
-	3.	Generates transfer proposals to rebalance inventory efficiently.
-	4.	Runs Isolation Forest (unsupervised ML) to detect anomalies in stock, cost, or restock timing.
-	5.	Displays results interactively with options to export findings.
 
+The tool uses warehouse inventory data to identify imbalances across locations and detect unusual stock patterns.
+	•	Inventory Preview: Displays current stock information for validation.
+	•	Warehouse Optimization: Calculates surplus and deficit levels, proposing efficient transfer routes.
+	•	AI Insights (Anomaly Detection): Uses unsupervised machine learning to detect abnormal behavior such as sudden drops, delayed restocks, or excess stock.
+All features are accessible through an interactive Streamlit dashboard for ease of analysis and visualization.
 ____
 
 ### Setup Instruction
 
-‎ 
-	1.	Clone or Download the Repository
-	•	Download the project ZIP or clone it using:
-git clone https://github.com/<your-username>/warehouse_optimizer.git
-	2.	Navigate to the Project Folder
-	•	Open a terminal and move into the directory:
-cd warehouse_optimizer
-	3.	Create a Virtual Environment
-	•	Run the following command to create a virtual environment:
-python3 -m venv venv
-	4.	Activate the Virtual Environment
-	•	On macOS/Linux:
-source venv/bin/activate
-	•	On Windows:
-venv\Scripts\activate
-	5.	Install Required Dependencies
-	•	Install all project dependencies using pip:
-pip install -r requirements.txt
-	6.	Prepare the Data
-	•	Place all the dataset CSV files into the /data folder.
-	•	Make sure the following key file exists:
-warehouse_inventory.csv
-	7.	Run the Streamlit Application
-	•	Start the dashboard with the command:
-streamlit run app.py
-	8.	Access the Web App
-	•	Once Streamlit starts, open the provided local URL in your browser (usually http://localhost:8501).
-	9.	Explore the Features
-	•	View inventory data, detect anomalies, and generate transfer proposals interactively.
+
+To set up and run the Warehouse Optimization Tool:
+	1.	Clone or download the repository.
+Example: git clone https://github.com/<your-username>/warehouse_optimizer.git
+	2.	Navigate into the project directory.
+Command: cd warehouse_optimizer
+	3.	Create a virtual environment.
+Command: python3 -m venv venv
+	4.	Activate the virtual environment.
+macOS/Linux: source venv/bin/activate
+Windows: venv\Scripts\activate
+	5.	Install all required dependencies.
+Command: pip install -r requirements.txt
+	6.	Place all dataset CSV files inside the /data folder.
+Ensure warehouse_inventory.csv is present.
+	7.	Run the Streamlit application.
+Command: streamlit run app.py
+	8.	Open the local URL (usually http://localhost:8501) in your browser.
 
 
 ____
