@@ -10,7 +10,6 @@ It helps operations teams balance stock levels, propose transfers, and identify 
 ⸻
 
 ### Features
-
 	
 • **AI Insights (Anomaly Detection):**  
 Detects abnormal inventory behavior such as sudden stock drops, delayed restocks, or high storage costs.
@@ -31,26 +30,27 @@ ____
 | Folder / File Path                         | Description |
 |--------------------------------------------|-------------|
 | `warehouse_optimizer/`                     | Root project directory |
-| ├── `app.py`                               | Main Streamlit application script |
-| ├── `anomaly_detection.py`                 | Contains ML-based anomaly detection logic |
-| ├── `optimizer.py`                         | Handles surplus/deficit analysis and transfer proposal logic |
-| ├── `requirements.txt`                     | Python dependencies for the project |
-| ├── `README.md`                            | Project documentation and usage guide |
-| ├── `data/`                                | Folder containing dataset CSV files |
-| │ ├── `warehouse_inventory.csv`            | Warehouse-level inventory data |
-| │ ├── `vehicle_fleet.csv`                  | Vehicle specifications and efficiency data |
-| │ ├── `orders.csv`                         | Orders and delivery information |
-| │ ├── `routes_distance.csv`                | Distance and route mapping data |
-| │ ├── `cost_breakdown.csv`                 | Operational cost data |
-| │ ├── `customer_feedback.csv`              | Feedback and sentiment data |
-| │ ├── `delivery_performance.csv`           | Delivery performance metrics |
-| ├── `outputs/`                             | Generated output files (transfer proposals, anomalies) |
-| │ ├── `transfer_proposals.csv`             | Recommended inter-warehouse transfers |
-| │ ├── `warehouse_anomalies.csv`            | Flagged anomalies in inventory data |
-| └── `venv/`                                | Virtual environment folder (optional, for isolated dependencies) |
+|  `app.py`                               | Main Streamlit application script |
+| `anomaly_detection.py`                 | Contains ML-based anomaly detection logic |
+| `optimizer.py`                         | Handles surplus/deficit analysis and transfer proposal logic |
+|  `requirements.txt`                     | Python dependencies for the project |
+|  `README.md`                            | Project documentation and usage guide |
+|  `data/`                                | Folder containing dataset CSV files |
+|   `warehouse_inventory.csv`            | Warehouse-level inventory data |
+| `vehicle_fleet.csv`                  | Vehicle specifications and efficiency data |
+|  `orders.csv`                         | Orders and delivery information |
+|  `routes_distance.csv`                | Distance and route mapping data |
+|  `cost_breakdown.csv`                 | Operational cost data |
+|  `customer_feedback.csv`              | Feedback and sentiment data |
+|  `delivery_performance.csv`           | Delivery performance metrics |
+| `outputs/`                             | Generated output files (transfer proposals, anomalies) |
+|  `transfer_proposals.csv`             | Recommended inter-warehouse transfers |
+| `warehouse_anomalies.csv`            | Flagged anomalies in inventory data |
+|  `venv/`                                | Virtual environment folder (optional, for isolated dependencies) |
 
 ### How It Works 
-
+‎ 
+‎ 
 	1.	Loads warehouse data (e.g., stock, reorder level, and storage cost).
 	2.	Computes surplus and deficit across warehouses.
 	3.	Generates transfer proposals to rebalance inventory efficiently.
@@ -59,35 +59,44 @@ ____
 
 ____
 
-Setup Instructions (Plain Text)
-	1.	Clone the repository
-Open your terminal and run:
-git clone https://github.com/<your-username>/warehouse-optimizer.git
-cd warehouse-optimizer
-	2.	Create and activate a virtual environment
-	•	On macOS/Linux:
+### Setup Instruction
+
+‎ 
+	1.	Clone or Download the Repository
+	•	Download the project ZIP or clone it using:
+git clone https://github.com/<your-username>/warehouse_optimizer.git
+	2.	Navigate to the Project Folder
+	•	Open a terminal and move into the directory:
+cd warehouse_optimizer
+	3.	Create a Virtual Environment
+	•	Run the following command to create a virtual environment:
 python3 -m venv venv
+	4.	Activate the Virtual Environment
+	•	On macOS/Linux:
 source venv/bin/activate
 	•	On Windows:
-python -m venv venv
 venv\Scripts\activate
-	3.	Install the required packages
-Run:
+	5.	Install Required Dependencies
+	•	Install all project dependencies using pip:
 pip install -r requirements.txt
-	4.	Add your datasets
-Place all .csv files (like warehouse_inventory.csv) inside the data/ folder
-or specify their folder path in the Streamlit sidebar input.
-	5.	Launch the Streamlit app
-Run this command in the terminal:
+	6.	Prepare the Data
+	•	Place all the dataset CSV files into the /data folder.
+	•	Make sure the following key file exists:
+warehouse_inventory.csv
+	7.	Run the Streamlit Application
+	•	Start the dashboard with the command:
 streamlit run app.py
-	6.	Access the dashboard
-Open your browser and go to:
-http://localhost:8501
+	8.	Access the Web App
+	•	Once Streamlit starts, open the provided local URL in your browser (usually http://localhost:8501).
+	9.	Explore the Features
+	•	View inventory data, detect anomalies, and generate transfer proposals interactively.
+
 
 ____
 
   ### Tech Stack
-  
+  ‎
+  ‎ 
 	•	Python 3.12+
 	•	Streamlit — Interactive UI
 	•	Pandas, NumPy — Data wrangling
