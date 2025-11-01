@@ -94,7 +94,7 @@ ____
 
 ### Author
 
-Name: Vaibhav Simhaj
-Role: AI Intern
-Organization: OFI Services
-Project: Warehouse Optimization & AI Insights System
+**Name:** Vaibhav Simhaj
+**Role:** AI Intern
+**Organization:** OFI Services
+**Project:** Warehouse Optimization & AI Insights System
