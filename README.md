@@ -85,16 +85,16 @@ ____
   ### Tech Stack
   ‎
   ‎ 
-	•	Python 3.12+
-	•	Streamlit — Interactive UI
-	•	Pandas, NumPy — Data wrangling
-	•	Scikit-Learn (Isolation Forest) — ML-based anomaly detection
+	•	Python 3.12+ <br>
+	•	Streamlit — Interactive UI <br>
+	•	Pandas, NumPy — Data wrangling <br>
+	•	Scikit-Learn (Isolation Forest) — ML-based anomaly detection <br>
 
 ____
 
 ### Author
 
-**Name:** Vaibhav Simhaj
-**Role:** AI Intern
-**Organization:** OFI Services
-**Project:** Warehouse Optimization & AI Insights System
+**Name:** Vaibhav Simhaj <br>
+**Role:** AI Intern <br>
+**Organization:** OFI Services <br>
+**Project:** Warehouse Optimization & AI Insights System <br>
