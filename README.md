@@ -85,7 +85,7 @@ ____
   ### Tech Stack
   ‎
   ‎ 
-•	Python 3.12+ <br>
+    •	Python 3.12+ <br>
 	•	Streamlit — Interactive UI <br>
 	•	Pandas, NumPy — Data wrangling <br>
 	•	Scikit-Learn (Isolation Forest) — ML-based anomaly detection <br>
