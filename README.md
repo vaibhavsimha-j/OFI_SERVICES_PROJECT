@@ -61,23 +61,23 @@ ____
 ### Setup Instruction
 
 
-To set up and run the Warehouse Optimization Tool:
-	1.	Clone or download the repository.
-Example: git clone https://github.com/<your-username>/warehouse_optimizer.git
-	2.	Navigate into the project directory.
-Command: cd warehouse_optimizer
-	3.	Create a virtual environment.
-Command: python3 -m venv venv
-	4.	Activate the virtual environment.
-macOS/Linux: source venv/bin/activate
-Windows: venv\Scripts\activate
-	5.	Install all required dependencies.
-Command: pip install -r requirements.txt
-	6.	Place all dataset CSV files inside the /data folder.
-Ensure warehouse_inventory.csv is present.
-	7.	Run the Streamlit application.
-Command: streamlit run app.py
-	8.	Open the local URL (usually http://localhost:8501) in your browser.
+To set up and run the Warehouse Optimization Tool: <br>
+	1.	Clone or download the repository. <br>
+Example: git clone https://github.com/<your-username>/warehouse_optimizer.git <br>
+	2.	Navigate into the project directory. <br>
+Command: cd warehouse_optimizer <br>
+	3.	Create a virtual environment. <br>
+Command: python3 -m venv venv <br>
+	4.	Activate the virtual environment. <br>
+macOS/Linux: source venv/bin/activate <br>
+Windows: venv\Scripts\activate <br>
+	5.	Install all required dependencies. <br>
+Command: pip install -r requirements.txt <br>
+	6.	Place all dataset CSV files inside the /data folder. <br>
+Ensure warehouse_inventory.csv is present. <br>
+	7.	Run the Streamlit application. <br>
+Command: streamlit run app.py <br>
+	8.	Open the local URL (usually http://localhost:8501) in your browser. <br>
 
 
 ____
